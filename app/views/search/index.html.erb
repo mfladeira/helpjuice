@@ -1,0 +1,30 @@
+<div class="d-flex flex-column justify-content-center align-items-center vh-100">
+  <div class="card p-4 shadow" style="width: 100%; max-width: 500px;">
+    <h4 class="mb-3 text-center">Search Articles</h4>
+    <input type="text" id="searchBox" class="form-control" placeholder="Search..." />
+  </div>
+
+  <div class="mt-4 p-4 card shadow" style="width: 100%; max-width: 500px;">
+    <h4 class="text-center">Search Analytics</h4>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col" style="color: #666;">Query</th>
+          <th scope="col" style="color: #666;">Count</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @top_queries.each do |query, count| %>
+          <tr>
+            <td style="color: #444;"><%= query %></td>
+            <td>
+              <span class="badge rounded-pill" style="background-color: #007bff; color: white;">
+                <%= count %>
+              </span>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
