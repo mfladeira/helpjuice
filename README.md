@@ -15,7 +15,7 @@ This is a Ruby on Rails application that records search queries entered by users
 
 ```bash
 git clone https://github.com/mfladeira/helpjuice.git
-cd search-analytics-app
+cd helpjuice
 bundle install
 rails db:create db:migrate
 rails server
