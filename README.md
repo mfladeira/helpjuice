@@ -14,7 +14,7 @@ This is a Ruby on Rails application that records search queries entered by users
 ## Installation
 
 ```bash
-git clone https://github.com/your-username/search-analytics-app.git
+git clone https://github.com/mfladeira/helpjuice.git
 cd search-analytics-app
 bundle install
 rails db:create db:migrate
