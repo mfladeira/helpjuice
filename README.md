@@ -1,24 +1,27 @@
-# README
+## Search Analytics App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Ruby on Rails application that records search queries entered by users and displays real-time analytics of the most searched queries based on the IP
 
-Things you may want to cover:
+## Technologies Used
 
-* Ruby version
+- Ruby on Rails
+- PostgreSQL
+- JavaScript (Vanilla)
+- Bootstrap (CSS)
+- HTML
+- Rspec
 
-* System dependencies
+## Installation
 
-* Configuration
+```bash
+git clone https://github.com/your-username/search-analytics-app.git
+cd search-analytics-app
+bundle install
+rails db:create db:migrate
+rails server
+```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Testing
+```bash
+bundle exec rspec
+```
