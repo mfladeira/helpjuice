@@ -4,7 +4,7 @@ class SearchController < ApplicationController
     ip = request.remote_ip
 
     recent_search = Search.where(ip_address: ip)
-                          .where("updated_at <= ?", 3.minutes.ago)
+                          .where("updated_at >= ?", 1.minutes.ago)
                           .order(updated_at: :desc)
                           .first
 
